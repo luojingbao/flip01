@@ -1,0 +1,54 @@
+\documentclass{amsart}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+%
+\title[FLIP01 PROJECT]{FLIP01 PROJECT}%
+
+\author{Jingbao Luo}
+\address[A.~1]{School of Economics and Management,\\ 
+Nanjing University of Science and Technology, Nanjing 210094, China}%
+\email[A.~1]{jluo@tulip.academy}
+
+%\thanks{Thanks to \ldots}%
+\date{\gitAuthorDate}%
+
+\input{./tex/abstract}
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{./tex/mainbody}
+
+% ----------------------------------------------------------------
+%=================================================================
+
+
+\end{document}
+
