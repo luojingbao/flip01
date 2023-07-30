@@ -331,7 +331,7 @@ In the experimental design, we achieved the optimal performance of the model by 
 			none-parameter-adjust & 0.963 & 0.821  & none-parameter-adjust(feature \_delete) & 0.953 & 0.663 \\
 			n\_estimators-adjust(220) & 0.981 & 0.722  & n\_estimators-adjust(feature \_delete)(140) & 0.980 & 0.520 \\
 			n\_features-adjust(11) & 0.981 & 0.750  & n\_features-adjust(feature \_delete)(11) & 0.981 & 0.522 \\
-			max\_samples-adjust & 0.963 & 0.821  & nmax\_samples-adjust(feature \_delete) & 0.980 & 0.634\\
+			max\_samples-adjust & 0.981 & 0.829  & nmax\_samples-adjust(feature \_delete) & 0.980 & 0.634\\
 			\bottomrule
 		\end{tabular}
 	}
@@ -398,23 +398,23 @@ In the experimental design, we achieved the optimal performance of the model by 
 	
 	
 	
-	\begin{figure}
-		\centering
-		\subfigure[n\_estimators-adjust]{
-			\begin{minipage}[b]{0.4\textwidth}
-				\includegraphics[width=1\textwidth]{figures/n_est_node.eps}
-			\end{minipage}
-			\label{fig:hor_2figs_1cap_2subcap_1}
-		}
-		\subfigure[n\_estimators-adjust (feature\_delete)]{
-			\begin{minipage}[b]{0.4\textwidth}
-				\includegraphics[width=1\textwidth]{figures/n_est.eps}
-			\end{minipage}
-			\label{fig:hor_2figs_1cap_2subcap_2}
-		}
-		\caption{n\_estimators-adjust}
-		\label{fig:fig_n_estimators}
-	\end{figure}
+\begin{figure}
+	\centering
+	\subfigure[max\_samples-adjust]{
+		\begin{minipage}[b]{0.4\textwidth}
+			\includegraphics[width=1\textwidth]{figures/max_exampleN.eps}
+		\end{minipage}
+		\label{fig:h}
+	}
+	\subfigure[max\_samples-adjust (feature\_delete)]{
+		\begin{minipage}[b]{0.4\textwidth}
+			\includegraphics[width=1\textwidth]{figures/max_example.eps}
+		\end{minipage}
+		\label{fig:ho}
+	}
+	\caption{max\_samples-adjust}
+	\label{fig:max_samples-adjust}
+\end{figure}
 	
 	
 \end{slide}

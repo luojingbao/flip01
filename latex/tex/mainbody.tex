@@ -120,7 +120,7 @@ In the experimental design, we achieved the optimal performance of the model by 
 			none-parameter-adjust & 0.963 & 0.821  & none-parameter-adjust(feature \_delete) & 0.953 & 0.663 \\
 			n\_estimators-adjust(220) & 0.981 & 0.722  & n\_estimators-adjust(feature \_delete)(140) & 0.980 & 0.520 \\
 			n\_features-adjust(11) & 0.981 & 0.750  & n\_features-adjust(feature \_delete)(11) & 0.981 & 0.522 \\
-			max\_samples-adjust & 0.963 & 0.821  & nmax\_samples-adjust(feature \_delete) & 0.980 & 0.634\\
+			max\_samples-adjust & 0.981 & 0.829  & nmax\_samples-adjust(feature \_delete) & 0.980 & 0.634\\
 			\bottomrule
 		\end{tabular}
 	}
@@ -128,7 +128,7 @@ In the experimental design, we achieved the optimal performance of the model by 
 
 \cref{tbl:parameter-adjustment} displays the accuracy and recall rates under various parameter adjustments. From the table, it can be observed that the recall rate deteriorates after removing some features. This implies that although these features may exhibit negative correlations with the outcome, they should not be indiscriminately deleted. By iteratively trying different parameter combinations, we ultimately identified the optimal parameters.
 
-\cref{fig:fig_n_estimators} and \cref{fig:n_features-adjust}  and \cref{tbl:parameter-adjustment} are visualizations of specific parameter adjustments. 
+\cref{fig:fig_n_estimators} and \cref{fig:n_features-adjust}  and \cref{fig:max_samples-adjust} are visualizations of specific parameter adjustments. 
 \begin{figure}
 	\centering
 	\subfigure[n\_estimators-adjust]{
@@ -165,6 +165,23 @@ In the experimental design, we achieved the optimal performance of the model by 
 	\label{fig:n_features-adjust}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\subfigure[max\_samples-adjust]{
+		\begin{minipage}[b]{0.4\textwidth}
+			\includegraphics[width=1\textwidth]{figures/max_exampleN.eps}
+		\end{minipage}
+		\label{fig:h}
+	}
+	\subfigure[max\_samples-adjust (feature\_delete)]{
+		\begin{minipage}[b]{0.4\textwidth}
+			\includegraphics[width=1\textwidth]{figures/max_example.eps}
+		\end{minipage}
+		\label{fig:ho}
+	}
+	\caption{max\_samples-adjust}
+	\label{fig:max_samples-adjust}
+\end{figure}
 
 \section{Conclusions} \label{sec-conclusions}
 
