@@ -1,0 +1,130 @@
+\documentclass{amsart}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL r.tex        Sun Aug 13 11:34:41 2023
+%DIF ADD report.tex   Sat Jul 29 10:29:26 2023
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+%
+%=================================================================
+%
+\DIFdelbegin %DIFDELCMD < \title[A Short Running Title]{%%%
+\DIFdel{Title of This Paper}\DIFdelend \DIFaddbegin \title[FLIP01 PROJECT]{\DIFadd{FLIP01 PROJECT}\DIFaddend }%
+
+\author{\DIFdelbegin \DIFdel{Author 1}\DIFdelend \DIFaddbegin \DIFadd{Jingbao Luo}\DIFaddend }
+\DIFdelbegin %DIFDELCMD < \address[A.~1]{School of Computer Science,\\ 
+%DIFDELCMD < Xi'an Shiyou University, Shaanxi 710065, China}%%%
+\DIFdelend \DIFaddbegin \address[A.~1]{School of Economics and Management,\\ 
+Nanjing University of Science and Technology, Nanjing 210094, China}\DIFaddend %
+\DIFdelbegin %DIFDELCMD < \email[A.~1]{xxx@tulip.academy}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \email[A.~1]{jluo@tulip.academy}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \author{Gang Li}
+%DIFDELCMD < \address[A.~2]{School of Information Technology \\
+%DIFDELCMD < Deakin University, Geelong, VIC 3216, Australia}%%%
+%DIF < 
+%DIFDELCMD < \email[A.~2]{gang.li@deakin.edu.au}
+%DIFDELCMD < 
+
+%DIFDELCMD < \author{Author 3}
+%DIFDELCMD < \address[A.~3]{School of Information Technology \\
+%DIFDELCMD < Deakin University \\
+%DIFDELCMD < Vic 3125, Australia}%%%
+%DIF < 
+%DIFDELCMD < \email[A.~3]{xxx@deakin.edu.au}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend %\thanks{Thanks to \ldots}%
+\DIFdelbegin %DIFDELCMD < \subjclass{Artificial Intelligence}%%%
+%DIF < 
+\DIFdelend \date{\gitAuthorDate}%
+
+\input{./tex/a_diff}
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{./tex/m_diff}
+
+% ----------------------------------------------------------------
+\DIFdelbegin %DIFDELCMD < \newpage
+%DIFDELCMD < \bibliography{tuliplab,yourbib}
+%DIFDELCMD < %%%
+%DIF <  TODO: you should change this yourbib into a proper bib file name
+%DIFDELCMD < \bibliographystyle{plainnat}
+%DIFDELCMD < %%%
+\DIFdelend %=================================================================
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < \listoftodos
+%DIFDELCMD < %%%
+\DIFdelend 
+
+
+\end{document}
+
